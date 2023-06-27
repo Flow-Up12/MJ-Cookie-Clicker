@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Clicker Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+		  
+	</style>
+</head>
+<body>  
+    <h1>Cookie Clicker Game </h1>
+    <div id="mainGameSection" class="noselect">
+      <button id="helper-button" onclick="toggleHelpers()" >Helpers</button>
+      <button id="upgrade-button" onclick="toggleUpgrades()">Upgrades</button>
+      <button id="settings-button" onclick="toggleSettings()">settings</button>
+    <div> <span id="score"></span> </div> 
+    <div> <span id="cookies-per-sec"> Cookies per second: </span> </div>
+	<div class="game-container">
+        <div id="cookie-container">
+            <div id="cookie"> <img src="cookie.png" height="400" width="400" > </div>   
+            <div id = "clickable-circle" onclick="sound()"></div>        
+
+        </div>  
+        <div id="upgrades-container" style="display:none"> 
+        <nav>  
+          <ul id="upgradeList">
+            <button id="close-button" onclick="toggleUpgrades()">X</button>
+            <h2>Upgrade List</h2>
+            <li><button id="upgrade1" class="tooltip" data-tooltip="clicker and clicks twice as efficient" >1</button> <button id="upgrade6">6</button></li>
+            <li><button id="upgrade2"  class="tooltip" data-tooltip="This is an example image">2</button></li>
+            <li><button id="upgrade3" class="tooltip" >3</button></li>
+            <li><button id="upgrade4">4</button></li>
+            <li><button id="upgrade5">5</button></li>
+          </ul>
+        </nav>  
+        </div>  
+
+        <div id="helper-container" style="display:none">
+        <nav> 
+          <ul id="helperList">
+                <button id="close-button" onclick="toggleHelpers()">X</button>
+                <h2>Helper List</h2>
+                <li><button id="clicker">Clicker cost: <span id="clicker-cost">15</span> <span id="clicker-amount">0</span> </button></li>
+                <li><button id="grandma">Grandma cost: <span id="grandma-cost">100</span> <span id="grandma-amount">0</span></button></li>
+                <li><button id="farms">Farm cost: <span id="farm-cost">1,100</span> <span id="farm-amount">0</span></button></li>
+                <li><button id="mine">Mine cost: <span id="mine-cost">12,000</span> <span id="mine-amount">0</span></button></li>
+                <li><button id="factory">Factory cost: <span id="factory-cost">130000</span> <span id="factory-amount">0</span></button></li>
+                <li><button id="bank">Bank cost: <span id="bank-cost">1.4M</span> <span id="bank-amount">0</span></button></li>
+                <li><button id="temple">Temple cost: <span id="temple-cost">20M</span> <span id="temple-amount">0</span></button></li>
+                <li><button id="wizard">Wizard tower cost: <span id="wizard-cost">330M</span> <span id="wizard-amount">0</span></button></li>
+                <li><button id="shipment">Shipment cost: <span id="shipment-cost">5.1B</span> <span id="shipment-amount">0</span></button></li>
+                <li><button id="lab">Alchemy lab cost: <span id="lab-cost">75B</span> <span id="lab-amount">0</span></button></li>
+                <li><button id="portal">Portal cost: <span id="portal-cost">1T</span> <span id="portal-amount">0</span></button></li>
+                <li><button id="time">Time machine cost: <span id="time-cost">14T</span> <span id="time-amount">0</span></button></li>
+                <li><button id="anti">Anti-matter cost: <span id="anti-cost">170T</span> <span id="anti-amount">0</span></button></li>
+                <li><button id="prism">Prism cost: <span id="prism-cost">2.1QD</span> <span id="prism-amount">0</span></button></li>
+                <li><button id="chance">Chancemaker cost: <span id="chance-cost">26QD</span> <span id="chance-amount">0</span></button></li>
+                <li><button id="fractal">Fractal engine cost: <span id="fractal-cost">310QD</span> <span id="fractal-amount">0</span></button></li>
+                <li><button id="java">JavaScript cost: <span id="java-cost">71QU</span> <span id="java-amount">0</span></button></li>
+                <li><button id="idle">Idleverse cost: <span id="idle-cost">12Sext</span> <span id="idle-amount">0</span></button></li>
+                <li><button id="cortex">Cortex baker cost: <span id="cortex-cost">1,9Sep</span> <span id="cortex-amount">0</span></button></li>
+                <li><button id="you">YOU cost: <span id="you-cost">540sep</span> <span id="you-amount">0</span></button></li>
+            </ul>
+        </nav>
+        </div>
+        
+      <div>
+        <button id="reset-button" onclick="resetStats()">Reset stats</button>
+      </div>
+      <div>
+        <button id="moonWorldButton" >Moon world</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="moonWorldSection" style="display: none;">
+
+  </div>
+    
+	<script src="script.js">
+    
+  </script>
+</body>
+</html>
